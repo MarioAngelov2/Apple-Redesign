@@ -6,7 +6,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 const Navbar = () => {
     return (
-        <div className="bg-black sticky top-0">
+        <div className="bg-black sticky top-0 z-30">
             <Container>
                 <div
                     className="flex max-w-[1440px] mx-auto w-full px-6 lg:px-24 py-2 text-gray-400 
