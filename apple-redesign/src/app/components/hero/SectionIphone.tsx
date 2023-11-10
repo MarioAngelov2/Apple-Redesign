@@ -22,12 +22,13 @@ const SectionIphone = () => {
                             Научи повече &rarr;
                         </Link>
                     </div>
-                    <div className="flex h-[600px]">
+                    <div className="flex h-[700px]">
                     <Image
                             src="/iphone15.jpeg"
                             alt="iphoneHero"
-                            fill
-                            className="object-cover "
+                            width={16000}
+                            height={700}
+                            className="object-cover"
                         />
                     </div>
                 </div>
