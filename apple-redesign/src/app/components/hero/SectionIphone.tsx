@@ -12,11 +12,11 @@ const SectionIphone = () => {
                         <h1 className="text-4xl md:text-6xl font-semibold">
                             iPhone 15 
                         </h1>
-                        <h2 className="text-xl md:text-2xl text-center">
+                        <h2 className="text-xl md:text-2xl text-center font-light">
                             Нова камера. Нов дизайн. Чуднология.
                         </h2>
                         <Link
-                            className="text-lg md:text-xl text-blue-500 hover:underline underline-offset-1"
+                            className="text-lg md:text-xl text-blue-500 hover:underline underline-offset-1 font-light"
                             href="/"
                         >
                             Научи повече &rarr;
