@@ -14,12 +14,12 @@ const SectionWatch = () => {
                             <AiFillApple />
                             WATCH
                         </h1>
-                        <p className="text-red-500 text-lg">SERIES 9</p>
-                        <h2 className="text-xl md:text-2xl text-center">
+                        <p className="text-red-500 text-lg font-light">SERIES 9</p>
+                        <h2 className="text-xl md:text-2xl text-center font-light">
                             По-умен. По-ярък. По-мощен.
                         </h2>
                         <Link
-                            className="text-lg md:text-xl text-blue-500 hover:underline underline-offset-1"
+                            className="text-lg md:text-xl text-blue-500 hover:underline underline-offset-1 font-light"
                             href="/"
                         >
                             Научи повече &rarr;
