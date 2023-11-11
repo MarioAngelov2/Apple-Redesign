@@ -1,12 +1,35 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import Container from "../Container";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineSearch } from "react-icons/ai";
 
 const Navbar = () => {
+    const [scrolled, setScrolled] = useState<boolean>(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const isScrolled = window.scrollY > 60;
+            if (isScrolled !== scrolled) {
+                setScrolled(isScrolled);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [scrolled]);
+
     return (
-        <div className="bg-black sticky top-0 z-30">
+        <div
+            className={`bg-black py-2 sticky top-0 z-30 ${
+                scrolled ? "bg-black/75" : ""
+            }`}
+        >
             <Container>
                 <div
                     className="flex max-w-[1440px] mx-auto w-full px-6 lg:px-24 py-2 text-gray-400 
