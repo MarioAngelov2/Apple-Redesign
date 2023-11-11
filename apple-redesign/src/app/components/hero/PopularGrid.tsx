@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const PopularGrid = () => {
     return (
-        <div className="px-6 bg-white">
+        <div className="md:px-4 bg-white">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
                 {/* LEFT SECTION */}
                 <div className="flex justify-center items-center overflow-hidden max-w-full max-h-full relative bg-[#FCFBFE]">
