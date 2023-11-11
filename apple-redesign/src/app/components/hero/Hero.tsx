@@ -12,11 +12,11 @@ const Hero = () => {
                         <h1 className="text-4xl md:text-6xl font-semibold">
                             iPhone 15 Pro
                         </h1>
-                        <h2 className="text-xl md:text-2xl">
+                        <h2 className="text-xl md:text-2xl font-light">
                             Титан. Здрав. Лек. Про.
                         </h2>
                         <Link
-                            className="text-lg md:text-xl text-blue-500 hover:underline underline-offset-1"
+                            className="text-lg md:text-xl text-blue-500 hover:underline underline-offset-1 font-light"
                             href="/"
                         >
                             Научи повече &rarr;
