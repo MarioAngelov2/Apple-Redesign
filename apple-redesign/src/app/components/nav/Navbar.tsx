@@ -22,15 +22,15 @@ const Navbar = () => {
             scaleY: 1,
             transition: {
                 duration: 0.4,
-                ease: [0.12, 0, 0.39, 0]
-            }
+                ease: [0.12, 0, 0.39, 0],
+            },
         },
         exit: {
             scaleY: 0,
             transition: {
                 duration: 0.4,
-                ease: [0.12, 0, 0.39, 1]
-            }
+                ease: [0.12, 0, 0.39, 1],
+            },
         },
     };
 
@@ -55,6 +55,7 @@ const Navbar = () => {
 
     return (
         <div
+            data-testid="navbar"
             className={`bg-black py-2 sticky top-0 z-30 ${
                 scrolled ? "bg-black/75" : ""
             }`}
@@ -98,10 +99,12 @@ const Navbar = () => {
                     </div>
                     <div className="flex gap-6">
                         <AiOutlineSearch
+                            data-testid="search-icon"
                             size={22}
                             className="linkHover cursor-pointer"
                         />
                         <LiaGripLinesSolid
+                            data-testid="mobile-menu-icon"
                             size={22}
                             className="linkHover cursor-pointer"
                             onClick={handleIsMobile}
@@ -111,11 +114,12 @@ const Navbar = () => {
                 <AnimatePresence>
                     {isMobile && (
                         <motion.div
+                            data-testid="mobile-menu"
                             variants={menuVariants}
                             initial="initial"
                             animate="animate"
                             exit="exit"
-                            className="z-40 fixed top-0 bg-black h-full w-screen overflow-hidden origin-top"
+                            className="z-40 fixed top-0 bg-black max-h-[100vh] h-full w-screen overflow-hidden origin-top"
                         >
                             <div className="flex justify-end px-6 py-3 text-gray-400">
                                 <IoCloseOutline
