@@ -44,7 +44,9 @@ const PopularGrid = () => {
                             <AiFillApple size={40} />
                             WATCH
                         </h1>
-                        <p className="text-red-500 text-xs md:text-base font-light">SE</p>
+                        <p className="text-red-500 text-xs md:text-base font-light">
+                            SE
+                        </p>
                         <h2 className="text-md md:text-xl font-light">
                             Много причини да го обикнеш.
                         </h2>
@@ -130,7 +132,7 @@ const PopularGrid = () => {
                 {/* WHITE SECTION */}
                 {/* LEFT SECTION */}
                 <div className="flex justify-center items-center overflow-hidden max-w-full max-h-full relative bg-[#FCFBFE]">
-                    <div className="z-10 absolute top-20 right-0 left-0 flex flex-col items-center justify-center gap-2 px-1">
+                    <div className="z-10 absolute top-12 md:top-20 right-0 left-0 flex flex-col items-center justify-center gap-2 px-1">
                         <h1 className="text-3xl md:text-4xl font-semibold">
                             MacBook Air 15"
                         </h1>
@@ -160,7 +162,7 @@ const PopularGrid = () => {
                     <div className="z-10 absolute top-20 right-0 left-0 flex flex-col items-center justify-center gap-2 px-1">
                         <h1 className="text-3xl md:text-4xl font-semibold flex items-center">
                             <AiFillApple size={40} />
-                            tv 
+                            tv
                         </h1>
                         <h2 className="text-md md:text-xl text-center font-light">
                             Apple изживяването. <br />
