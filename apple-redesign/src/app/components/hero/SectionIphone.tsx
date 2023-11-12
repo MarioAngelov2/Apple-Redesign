@@ -5,12 +5,12 @@ import Link from "next/link";
 
 const SectionIphone = () => {
     return (
-        <div className="bg-[#F5F4F7]">
+        <div data-testid="section-iphone" className="bg-[#F5F4F7]">
             <Container>
                 <div className="flex flex-col items-center justify-center text-black relative">
                     <div className="z-10 absolute top-20 flex flex-col items-center gap-2 px-1">
                         <h1 className="text-4xl md:text-6xl font-semibold">
-                            iPhone 15 
+                            iPhone 15
                         </h1>
                         <h2 className="text-xl md:text-2xl text-center font-light">
                             Нова камера. Нов дизайн. Чуднология.
@@ -23,9 +23,9 @@ const SectionIphone = () => {
                         </Link>
                     </div>
                     <div className="flex h-[700px]">
-                    <Image
+                        <Image
                             src="/iphone15.jpeg"
-                            alt="iphoneHero"
+                            alt="iphone15"
                             width={16000}
                             height={700}
                             className="object-cover"
