@@ -74,7 +74,7 @@ const Footer = () => {
                 </p>
                 <hr className="border-b-[1px] mb-3" />
                 <div className="text-xs text-gray-500 mb-8 px-3 flex justify-between">
-                    <div className="flex">
+                    <div className="flex flex-col gap-3 md:gap-0 md:flex-row">
                         <p className="mr-6">
                             &copy; 2023 Apple Inc. Всички права запазени.
                         </p>
