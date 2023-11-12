@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 @layer components {
     .linkHover {
         @apply hover:text-white transition duration-300 ease-in-out
