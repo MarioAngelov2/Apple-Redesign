@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Hero = () => {
     return (
-        <div className="bg-black">
+        <div data-testid="hero" className="bg-black">
             <Container>
                 <div className="flex flex-col items-center justify-center text-white relative">
                     <div className="z-20 absolute top-20 flex flex-col items-center gap-2">
@@ -32,7 +32,7 @@ const Hero = () => {
                         />
                         <Image
                             src="/iphoneHero2.jpeg"
-                            alt="iphoneHero"
+                            alt="iphoneHero2"
                             width={1200}
                             height={1200}
                             className="md:hidden object-cover h-full"
