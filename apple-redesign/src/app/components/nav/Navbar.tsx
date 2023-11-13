@@ -80,7 +80,6 @@ const Navbar = () => {
                             </Link>
                         ))}
                           <AiOutlineSearch
-                            data-testid="search-icon"
                             size={22}
                             className="linkHover cursor-pointer"
                         />
