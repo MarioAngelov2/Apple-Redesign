@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const PopularGrid = () => {
     return (
-        <div className="md:px-4 bg-white">
+        <div data-testid="popular-grid" className="md:px-4 bg-white">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
                 {/* LEFT SECTION */}
                 <div className="flex justify-center items-center overflow-hidden max-w-full max-h-full relative bg-[#FCFBFE]">
@@ -60,7 +60,7 @@ const PopularGrid = () => {
                     <div className="">
                         <Image
                             src="/watches.jpeg"
-                            alt="watch_ultra"
+                            alt="watch_se"
                             width={2000}
                             height={600}
                             className="object-cover min-w-[1000px] md:min-w-[1100px] lg:min-w-[1400px] mt-12"
@@ -88,7 +88,7 @@ const PopularGrid = () => {
                     <div className="">
                         <Image
                             src="/airpods.jpeg"
-                            alt="watch_ultra"
+                            alt="airpods_pro"
                             width={2000}
                             height={600}
                             className="object-cover min-w-[1000px] md:min-w-[1100px] lg:min-w-[1400px] md:mt-8 lg:mt-0"
@@ -122,7 +122,7 @@ const PopularGrid = () => {
                     <div className="">
                         <Image
                             src="/ipad.jpeg"
-                            alt="watch_ultra"
+                            alt="ipad"
                             width={2000}
                             height={600}
                             className="object-cover min-w-[1000px] md:min-w-[1100px] lg:min-w-[1400px] md:mt-8 lg:mt-0"
@@ -132,7 +132,7 @@ const PopularGrid = () => {
                 {/* WHITE SECTION */}
                 {/* LEFT SECTION */}
                 <div className="flex justify-center items-center overflow-hidden max-w-full max-h-full relative bg-[#FCFBFE]">
-                    <div className="z-10 absolute top-8 md:top-6 right-0 left-0 flex flex-col items-center justify-center gap-2 px-1">
+                    <div className="z-10 absolute top-8 md:top-10 right-0 left-0 flex flex-col items-center justify-center gap-2 px-1">
                         <h1 className="text-3xl md:text-3xl lg:text-4xl font-semibold">
                             MacBook Air 15"
                         </h1>
@@ -150,18 +150,18 @@ const PopularGrid = () => {
                     <div className="">
                         <Image
                             src="/laptop.jpeg"
-                            alt="watch_ultra"
+                            alt="laptop"
                             width={2000}
                             height={600}
-                            className="object-cover min-w-[1000px] md:min-w-[1100px] lg:min-w-[1400pxmd:mt-0"
+                            className="object-cover min-w-[1000px] md:min-w-[1100px] lg:min-w-[1400px] md:mt-0"
                         />
                     </div>
                 </div>
                 {/* RIGHT SECTION */}
                 <div className="flex justify-center items-center overflow-hidden max-w-full max-h-full relative bg-[#FCFBFE]">
-                    <div className="z-10 absolute top-6 right-0 left-0 flex flex-col items-center justify-center gap-2 px-1">
+                    <div className="z-10 absolute top-10 right-0 left-0 flex flex-col items-center justify-center gap-2 px-1">
                         <h1 className="text-3xl md:text-3xl lg:text-4xl font-semibold flex items-center">
-                            <AiFillApple size={40} />
+                            <AiFillApple size={40} data-testid="apple-icon"/>
                             tv
                         </h1>
                         <h2 className="text-md md:text-lg text-center font-light">
@@ -178,10 +178,10 @@ const PopularGrid = () => {
                     <div className="">
                         <Image
                             src="/tv.jpeg"
-                            alt="watch_ultra"
+                            alt="tv"
                             width={2000}
                             height={600}
-                            className="object-cover min-w-[1000px] md:min-w-[1100px] lg:min-w-[1400px md:mt-0"
+                            className="object-cover min-w-[1000px] md:min-w-[1100px] lg:min-w-[1400px] md:mt-0"
                         />
                     </div>
                 </div>
