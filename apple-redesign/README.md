@@ -23,7 +23,7 @@ This is a landing page redesign from the official apple.bg website.
 - Tailwind CSS
 
 ## Screenshots
-<img src="public/apple-redesign-theta.vercel.app_.png">
-<img src="public/apple-redesign-theta.vercel.app_ (1).png">
-<img src="public/apple-redesign-theta.vercel.app_ (2).png">
+<img src="public/apple-redesign-theta.vercel.app_.png" width="1000px">
+<img src="public/apple-redesign-theta.vercel.app_ (1).png" width="600px">
+<img src="public/apple-redesign-theta.vercel.app_ (2).png" width="600px">
 
