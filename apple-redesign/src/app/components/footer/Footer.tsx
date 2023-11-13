@@ -1,6 +1,11 @@
 import React from "react";
-import Container from "../Container";
 import Link from "next/link";
+import {
+    footerLinks1,
+    footerLinks2,
+    footerLinks3,
+    footerLinks4,
+} from "@/app/utils/data";
 
 const Footer = () => {
     return (
@@ -16,19 +21,26 @@ const Footer = () => {
                             Разгледай
                         </p>
                         <ul className="font-light text-sm text-gray-600 flex flex-col gap-2">
-                            <li>Mac</li>
-                            <li>iPad</li>
-                            <li>iPhone</li>
-                            <li>Watch</li>
-                            <li>TV</li>
-                            <li>Music</li>
-                            <li>AirPods</li>
+                            {footerLinks1.map((link) => (
+                                <li key={link.title}>
+                                    <Link
+                                        className="hover:underline"
+                                        href={link.link}
+                                    >
+                                        {link.title}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                         <p className="font-semibold text-md text-gray-700 mt-5 mb-3">
                             Apple Wallet
                         </p>
                         <ul className="font-light text-sm text-gray-600 flex flex-col gap-2">
-                            <li>Appe Pay</li>
+                            <li>
+                                <Link className="hover:underline" href="/">
+                                    Appe Pay
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                     <div>
@@ -36,16 +48,31 @@ const Footer = () => {
                             Акаунт
                         </p>
                         <ul className="font-light text-sm text-gray-600 flex flex-col gap-2">
-                            <li>Управление на Apple ID</li>
-                            <li>iCloud.com</li>
+                            {footerLinks4.map((link) => (
+                                <li key={link.title}>
+                                    <Link
+                                        className="hover:underline"
+                                        href={link.link}
+                                    >
+                                        {link.title}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                         <p className="font-semibold text-md text-gray-700 mt-5 mb-3">
                             Забавления
                         </p>
                         <ul className="font-light text-sm text-gray-600 flex flex-col gap-2">
-                            <li>Appe TV+</li>
-                            <li>Appe Music</li>
-                            <li>Appe Arcade</li>
+                            {footerLinks2.map((link) => (
+                                <li key={link.title}>
+                                    <Link
+                                        className="hover:underline"
+                                        href={link.link}
+                                    >
+                                        {link.title}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                     <div>
@@ -53,16 +80,26 @@ const Footer = () => {
                             Ценностите на Apple
                         </p>
                         <ul className="font-light text-sm text-gray-600 flex flex-col gap-2">
-                            <li>Поверителност</li>
+                            <li>
+                                <Link className="hover:underline" href="/">
+                                    Поверителност
+                                </Link>
+                            </li>
                         </ul>
                         <p className="font-semibold text-md text-gray-700 mt-5 mb-3">
                             За Apple
                         </p>
                         <ul className="font-light text-sm text-gray-600 flex flex-col gap-2">
-                            <li>Newsroom</li>
-                            <li>Apple Leadership</li>
-                            <li>Инвеститори</li>
-                            <li>Етичност и законообразност</li>
+                            {footerLinks3.map((link) => (
+                                <li key={link.title}>
+                                    <Link
+                                        className="hover:underline"
+                                        href={link.link}
+                                    >
+                                        {link.title}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>
@@ -79,16 +116,24 @@ const Footer = () => {
                             &copy; 2023 Apple Inc. Всички права запазени.
                         </p>
                         <div className="flex gap-3">
-                            <p className="border-r-[1px] px-2 border-gray-600">
+                            <Link
+                                href="/"
+                                className="border-r-[1px] px-2 border-gray-600 hover:underline"
+                            >
                                 Използване на кукита
-                            </p>
-                            <p className="border-r-[1px] px-2 border-gray-600">
+                            </Link>
+                            <Link
+                                href="/"
+                                className="border-r-[1px] px-2 border-gray-600 hover:underline"
+                            >
                                 Условия за употреба
-                            </p>
-                            <p>Карта на сайта</p>
+                            </Link>
+                            <Link href="/" className="hover:underline">
+                                Карта на сайта
+                            </Link>
                         </div>
                     </div>
-                    <p>България</p>
+                    <Link href='/' className="hover:underline">България</Link>
                 </div>
             </div>
         </div>
