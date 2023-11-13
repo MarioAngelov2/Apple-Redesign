@@ -125,6 +125,7 @@ const Navbar = () => {
                                 <IoCloseOutline
                                     size={28}
                                     onClick={handleIsMobile}
+                                    className="linkHover cursor-pointer"
                                 />
                             </div>
                             <ul className="flex flex-col font-semibold gap-4 text-white text-2xl px-10 ">
