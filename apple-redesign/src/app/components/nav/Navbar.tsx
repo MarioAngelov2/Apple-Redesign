@@ -9,6 +9,7 @@ import { LiaGripLinesSolid } from "react-icons/lia";
 import { IoCloseOutline } from "react-icons/io5";
 import { navLinks } from "@/app/utils/data";
 import { AnimatePresence, motion } from "framer-motion";
+import { AiFillApple } from "react-icons/ai";
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState<boolean>(false);
@@ -65,15 +66,9 @@ const Navbar = () => {
                     className="flex max-w-[1440px] mx-auto w-full px-6 lg:px-24 text-gray-400 
                     text-sm items-center justify-between lg:justify-normal relative"
                 >
-                    <div className="hidden lg:flex w-full justify-evenly">
+                    <div className="hidden lg:flex w-full justify-evenly items-center">
                         <div>
-                            <Image
-                                src="https://www.svgrepo.com/show/303125/apple-logo.svg"
-                                alt="logo"
-                                width={25}
-                                height={25}
-                                className="cursor-pointer"
-                            />
+                            <AiFillApple size={24} className="cursor-pointer linkHover"/>
                         </div>
                         {navLinks.map((link) => (
                             <Link
@@ -84,6 +79,11 @@ const Navbar = () => {
                                 {link.title}
                             </Link>
                         ))}
+                          <AiOutlineSearch
+                            data-testid="search-icon"
+                            size={22}
+                            className="linkHover cursor-pointer"
+                        />
                     </div>
                 </div>
                 {/* MOBILE */}
