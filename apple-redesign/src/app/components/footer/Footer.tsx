@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
     return (
-        <div className="bg-[#F5F5F7] mt-4">
+        <div data-testid="footer" className="bg-[#F5F5F7] mt-4">
             <div className="max-w-[1000px] mx-auto">
                 <p className="px-3 mt-5 text-xs text-gray-500">
                     Необходим е абонамент за Apple TV+
@@ -133,7 +133,9 @@ const Footer = () => {
                             </Link>
                         </div>
                     </div>
-                    <Link href='/' className="hover:underline">България</Link>
+                    <Link href="/" className="hover:underline">
+                        България
+                    </Link>
                 </div>
             </div>
         </div>
