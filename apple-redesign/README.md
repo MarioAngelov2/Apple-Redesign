@@ -19,7 +19,6 @@ This is a landing page redesign from the official apple.bg website.
 
 - Next.js 14
 - TypeSrcipt
-- MongoDB
 - Tailwind CSS
 
 ## Screenshots
